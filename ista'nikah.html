@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Undangan Selista & Jungkook</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #fff5f5;
+    color: #654b4b;
+    text-align: center;
+}
+
+.cover {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background: linear-gradient(
+        rgba(70,30,40,.45),
+        rgba(70,30,40,.55)
+    ),
+    url("https://images.unsplash.com/photo-1519741497674-611481863552?w=1200")
+    center/cover;
+    color: white;
+}
+
+.cover h3 {
+    letter-spacing: 5px;
+    font-size: 15px;
+}
+
+.cover h1 {
+    font-size: 48px;
+    margin: 25px 0;
+    font-style: italic;
+}
+
+.cover p {
+    margin: 10px;
+}
+
+button {
+    padding: 13px 28px;
+    border: none;
+    border-radius: 30px;
+    background: #b76e79;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #934e5a;
+}
+
+#invitation {
+    display: none;
+}
+
+section {
+    padding: 65px 20px;
+}
+
+.hero {
+    background: #f9e5e7;
+}
+
+h2 {
+    color: #a65e6a;
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+.names {
+    font-size: 42px;
+    font-style: italic;
+    color: #a65e6a;
+    margin: 25px 0;
+}
+
+.flower {
+    font-size: 35px;
+}
+
+.card {
+    background: white;
+    max-width: 550px;
+    margin: 25px auto;
+    padding: 35px 20px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px #00000012;
+}
+
+.card p {
+    line-height: 1.9;
+}
+
+.date {
+    font-size: 24px;
+    color: #a65e6a;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    max-width: 650px;
+    margin: 25px auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+footer {
+    background: #f2d6da;
+    padding: 40px 20px;
+}
+
+footer h2 {
+    font-size: 30px;
+}
+
+@media(max-width: 500px) {
+    .cover h1 {
+        font-size: 37px;
+    }
+
+    .names {
+        font-size: 34px;
+    }
+
+    .gallery img {
+        height: 140px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HALAMAN PEMBUKA -->
+<div class="cover" id="cover">
+    <h3>THE WEDDING OF</h3>
+
+    <h1>Selista & Jungkook</h1>
+
+    <p>Dengan penuh kebahagiaan</p>
+    <p>Kami mengundang Anda untuk hadir</p>
+
+    <button onclick="openInvitation()">
+        Buka Undangan 💌
+    </button>
+</div>
+
+<!-- ISI UNDANGAN -->
+<div id="invitation">
+
+<section class="hero">
+    <div class="flower">🌸</div>
+
+    <p>THE WEDDING OF</p>
+
+    <div class="names">
+        SELISTA
+        <br>&
+        <br>JUNGKOOK
+    </div>
+
+    <p>50 JANUARI 2030</p>
+
+    <p>
+        Dua hati, satu cinta,
+        satu perjalanan selamanya.
+    </p>
+</section>
+
+<section>
+    <div class="flower">💐</div>
+
+    <h2>Salam Sejahtera</h2>
+
+    <p>
+        Dengan penuh rasa syukur dan kebahagiaan,
+        kami mengundang Bapak/Ibu/Saudara/i
+        untuk menghadiri acara pernikahan kami.
+    </p>
+
+    <div class="card">
+        <h2>Selista</h2>
+        <p>Putri tercinta dari keluarga</p>
+
+        <h2>&</h2>
+
+        <h2>Jungkook</h2>
+        <p>Putra tercinta dari keluarga</p>
+    </div>
+</section>
+
+<section class="hero">
+    <h2>Detail Acara</h2>
+
+    <div class="card">
+        <h3>💍 Hari Pernikahan</h3>
+
+        <div class="date">
+            50 Januari 2030
+        </div>
+
+        <p>Hari dan tanggal akan dikonfirmasi</p>
+        <p>Waktu: 10.00 WITA</p>
+        <p>Tempat: Akan diumumkan</p>
+    </div>
+</section>
+
+<section>
+    <h2>Our Memories</h2>
+
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600" alt="Pernikahan">
+        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=600" alt="Dekorasi">
+        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600" alt="Bunga">
+        <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?w=600" alt="Pasangan">
+    </div>
+</section>
+
+<section class="hero">
+    <h2>Doa & Restu</h2>
+
+    <div class="card">
+        <p>
+            Merupakan suatu kebahagiaan bagi kami
+            apabila Bapak/Ibu/Saudara/i berkenan
+            hadir dan memberikan doa restu.
+        </p>
+
+        <br>
+
+        <p>
+            Terima kasih atas doa dan kasih
+            yang diberikan kepada kami.
+        </p>
+    </div>
+</section>
+
+<footer>
+    <div class="flower">🤍</div>
+
+    <h2>Selista & Jungkook</h2>
+
+    <p>Forever Starts Here</p>
+
+    <p style="margin-top:20px;">
+        Made with Love ❤️
+    </p>
+</footer>
+
+</div>
+
+<script>
+function openInvitation() {
+    document.getElementById("cover").style.display = "none";
+
+    document.getElementById("invitation").style.display = "block";
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+</script>
+
+</body>
+</html>
